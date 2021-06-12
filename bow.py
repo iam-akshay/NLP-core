@@ -1,6 +1,7 @@
 """
 
 BOW (Bag of Words) Model:
+-------------------------
     BOW is a NLP technique of text modelling. Whenever we apply any algorithm in NLP, 
     it works on numbers. We cannot directly feed our text into that algorithm. 
     Hence, Bag of Words model is used to preprocess the text by converting it 
@@ -8,12 +9,21 @@ BOW (Bag of Words) Model:
     frequently used words.
 
 Process to create BOW model:
+----------------------------
     - Convert text in lower case.
     - Remove all non-word characters.
     - Remove all punctuations.
     - Now make table of each word with its appearance counts
     - Select number of most frequently used words.
     - Building the Bag of Words model
+    
+Problem with BOW:
+-----------------
+    - All words have same importance 
+    - No sementic info preserve
+    - Example: She is Beautiful (so here, for BOW all word will have same importance)
+
+So, we can solve this problem with TF-IDF Model.
 """
 
 import nltk
